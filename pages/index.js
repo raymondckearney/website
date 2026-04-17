@@ -1,33 +1,33 @@
 import Head from 'next/head';
 import Link from 'next/link';
 
-const highlights = [
-  { emoji: '✈️', stat: '40+',  label: 'Countries visited' },
-  { emoji: '🍽️', stat: '500+', label: 'Restaurants catalogued' },
-  { emoji: '🗣️', stat: '3',    label: 'Foreign languages studied' },
-  { emoji: '🏔️', stat: '∞',    label: 'Adventures sought' },
+const bullets = [
+  '18+ years of professional work experience working across several industries',
+  '12+ years leading and motivating teams to achieve results and mentoring individuals',
+  'Experience in financial services, tech, food & beverage, utilities, entertainment & media, telecom, and healthcare',
+  'Global experience working across cultures and conducting business in various countries',
 ];
 
-const expertise = [
+const testimonials = [
   {
-    title: 'Product Strategy',
-    description: 'Defining vision, roadmap, and go-to-market strategies that align cross-functional teams around measurable outcomes.',
-    icon: '🎯',
+    quote: "The client loved Ray and loved our results. We are in the process of signing $1.5M follow-on work, which is a direct result of Ray's hard work. Ray leveraged his previous strategic and organizational expertise to craft something new, tangible, valuable and useful for the C-suite.",
+    navy: true,
   },
   {
-    title: 'Experience Design',
-    description: 'Human-centered approaches to building products and services that delight customers at every touchpoint.',
-    icon: '✨',
+    quote: "Ray's leadership...continued to be exceptional. He continued to leverage and extend key relationships with the CCO, CIO, and VP of Marketing to showcase our BXT philosophy and deliver great product.",
+    navy: false,
   },
   {
-    title: 'Transformation & Change',
-    description: 'Leading large-scale organizational change and digital transformation programs with clarity and momentum.',
-    icon: '⚡',
+    quote: "Ray has a gift with people, and he created an exceptional environment for both for the client, introducing new ways of working, and with the internal PwC team, creating a high-integrity work environment coupled with fun, foodie adventures.",
+    navy: true,
   },
   {
-    title: 'Executive Leadership',
-    description: 'Building high-performing teams and inspiring cultures where people do their best work.',
-    icon: '🚀',
+    quote: "Ray developed great relationships with all members of the client team and specifically the Chief Customer Officer and CIO. Ray's ability to leverage his technical acumen to extend the clients perspective allowed us to quickly elevate their ideas on brand and experience.",
+    navy: false,
+  },
+  {
+    quote: "Ray got the team and client to collaborate, which with the client culture was no small feat. The client looked to him for direction on expanding their future state client journey's and to provide the training for them to expand their team.",
+    navy: true,
   },
 ];
 
@@ -35,108 +35,104 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Ray Kearney — Strategic Executive Leader</title>
-        <meta name="description" content="Ray Kearney is a strategic executive leader passionate about crafting experiences—for consumers and the teams that build them." />
-        <meta property="og:title" content="Ray Kearney — Strategic Executive Leader" />
-        <meta property="og:description" content="Passionate about crafting experiences for consumers and creating inspiring work environments." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.raymondckearney.com" />
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content="Ray Kearney — Strategic Executive Leader" />
-        <meta name="twitter:description" content="Passionate about crafting experiences for consumers and creating inspiring work environments." />
+        <title>Ray Kearney, MBA — Innovative & Strategic Executive Leader</title>
+        <meta name="description" content="Ray Kearney is an innovative and strategic executive leader passionate about crafting experiences for consumers and organizations." />
         <link rel="canonical" href="https://www.raymondckearney.com" />
       </Head>
 
       <main>
-        <section className="relative min-h-screen flex items-center bg-gradient-to-br from-gray-50 via-white to-brand-50">
-          <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <div className="absolute -top-40 -right-40 w-96 h-96 bg-brand-100 rounded-full opacity-30 blur-3xl" />
-            <div className="absolute -bottom-20 -left-20 w-80 h-80 bg-brand-50 rounded-full opacity-40 blur-3xl" />
+
+        {/* ── Hero ── */}
+        <section className="flex flex-col md:flex-row">
+          <div className="w-full md:w-[48%] bg-gray-200" style={{ minHeight: '620px' }}>
+            <img
+              src="/headshot.jpg"
+              alt="Ray Kearney"
+              className="w-full h-full object-cover object-top"
+              style={{ minHeight: '620px', display: 'block' }}
+            />
           </div>
-          <div className="relative max-w-5xl mx-auto px-6 pt-32 pb-24">
-            <p className="section-label animate-fade-in">Strategic Executive Leader</p>
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight mb-6 animate-slide-up" style={{ animationDelay: '0.1s' }}>
-              Passionate about<br />
-              <span className="text-brand-500">Experience</span>
+
+          <div className="w-full md:w-[52%] px-10 xl:px-14 py-14 flex flex-col justify-center">
+            <h1 className="text-5xl xl:text-6xl font-black text-black leading-tight mb-3">
+              Ray Kearney, MBA
             </h1>
-            <p className="prose-custom max-w-2xl mb-10 animate-slide-up" style={{ animationDelay: '0.2s' }}>
-              I believe great products and great places to work share the same foundation—a deep
-              respect for the person behind the experience. My career has been built at the
-              intersection of Product Strategy, Experience Design, and organizational transformation.
+            <p className="text-xs font-bold tracking-widest uppercase text-center text-black mb-6">
+              Innovative &amp; Strategic Executive Leader
             </p>
-            <div className="flex flex-wrap gap-4 animate-slide-up" style={{ animationDelay: '0.3s' }}>
-              <Link href="/about" className="bg-brand-500 text-white font-medium px-6 py-3 rounded-full hover:bg-brand-600 transition-colors">
-                About Me
+            <p className="text-center text-gray-800 text-sm leading-relaxed mb-6">
+              I am PASSIONATE about experience! Whether crafting experiences for consumers or creating
+              an inspiring work environment I am focused on the person behind the experience. Since
+              beginning my professional journey in Product and Experience Strategy, I&apos;ve led
+              transformation and change across numerous organizations. Through all my experience I remain
+              focused on bringing innovative thinking and strategic vision to all I do. I&apos;m grateful
+              to wake up each day loving what I do and I&apos;m excited to share with you some of my
+              greatest work. Please take a look and contact me with any questions.
+            </p>
+            <hr className="border-gray-300 mb-6" />
+            <div className="bg-gray-500 p-6 mb-6">
+              <ul className="space-y-4">
+                {bullets.map((b, i) => (
+                  <li key={i} className="flex gap-2 text-white font-bold text-sm leading-snug">
+                    <span className="mt-0.5">•</span>
+                    <span>{b}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="flex justify-end">
+              <Link
+                href="/portfolio"
+                className="bg-[#1c3054] text-white px-10 py-4 text-sm font-medium hover:opacity-90 transition-opacity"
+              >
+                View My Work
               </Link>
-              <a href="#contact" className="border border-gray-300 text-gray-700 font-medium px-6 py-3 rounded-full hover:border-gray-500 hover:text-gray-900 transition-colors">
-                Get in Touch
-              </a>
             </div>
           </div>
         </section>
 
-        <section className="bg-brand-500 text-white py-12">
-          <div className="max-w-5xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            {highlights.map(({ emoji, stat, label }) => (
-              <div key={label}>
-                <div className="text-3xl mb-1">{emoji}</div>
-                <div className="text-4xl font-bold mb-1">{stat}</div>
-                <div className="text-brand-100 text-sm">{label}</div>
+        {/* ── Testimonials ── */}
+        <section className="px-6 xl:px-10 py-16">
+          <h2 className="text-3xl xl:text-4xl font-black uppercase mb-10">
+            What My Colleagues Say About Me...
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+            {testimonials.map((t, i) => (
+              <div
+                key={i}
+                className={`rounded-2xl p-5 text-white text-xs text-center leading-relaxed italic ${
+                  t.navy ? 'bg-[#1c3054]' : 'bg-[#555565]'
+                }`}
+              >
+                &ldquo;{t.quote}&rdquo;
               </div>
             ))}
           </div>
         </section>
 
-        <section className="max-w-5xl mx-auto px-6 py-24">
-          <p className="section-label">What I Do</p>
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-12">Areas of Expertise</h2>
-          <div className="grid sm:grid-cols-2 gap-6">
-            {expertise.map(({ title, description, icon }) => (
-              <div key={title} className="card group">
-                <div className="text-3xl mb-4">{icon}</div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">{title}</h3>
-                <p className="text-gray-500 text-sm leading-relaxed">{description}</p>
-              </div>
-            ))}
+        {/* ── Speaking photo + Contact ── */}
+        <section className="bg-[#1c3054] pt-10 pb-16 px-6 xl:px-10">
+          <div className="max-w-5xl mx-auto mb-12">
+            <img
+              src="/speaking.jpg"
+              alt="Ray Kearney presenting"
+              className="w-full object-cover"
+              style={{ maxHeight: '480px', objectPosition: 'center' }}
+            />
+          </div>
+          <div className="text-center text-white space-y-2 mb-10">
+            <p className="font-bold text-lg">RaymondCKearney@gmail.com</p>
+            <p className="font-bold text-lg">(202) 578-3695</p>
+            <p className="font-bold text-xl pt-3 pb-6">New York, NY 10024</p>
+            <Link
+              href="/contact"
+              className="inline-block border border-white text-white px-16 py-3 text-base hover:bg-white hover:text-[#1c3054] transition-colors"
+            >
+              Contact
+            </Link>
           </div>
         </section>
 
-        <section className="bg-gray-50 py-24">
-          <div className="max-w-5xl mx-auto px-6">
-            <div className="max-w-3xl">
-              <p className="section-label">My Approach</p>
-              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8">The person behind the experience</h2>
-              <div className="space-y-5 prose-custom">
-                <p>Great experiences don&apos;t happen by accident. They are the result of deliberate thinking, empathy at scale, and teams that feel genuinely motivated to do their best work every day.</p>
-                <p>My career began in Product and Experience Strategy, where I quickly learned that sustainable growth comes not from the shiniest feature set, but from deeply understanding the people you serve—and building organizations capable of serving them brilliantly over time.</p>
-                <p>I&apos;ve had the privilege of leading transformation and change across numerous organizations, always bringing the same conviction: <em>innovation without empathy is just noise.</em></p>
-              </div>
-              <div className="mt-8">
-                <Link href="/about" className="text-brand-500 font-semibold hover:text-brand-700 transition-colors">
-                  More about me →
-                </Link>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="contact" className="max-w-5xl mx-auto px-6 py-24">
-          <div className="bg-brand-500 rounded-3xl p-12 text-center text-white">
-            <p className="text-brand-100 text-sm font-semibold tracking-widest uppercase mb-3">Let&apos;s Connect</p>
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Ready to build something great?</h2>
-            <p className="text-brand-100 text-lg mb-8 max-w-xl mx-auto">
-              Whether you&apos;re looking to transform your organization, craft better customer experiences, or simply have a great conversation—I&apos;d love to hear from you.
-            </p>
-            <div className="flex flex-wrap gap-4 justify-center">
-              <a href="mailto:hello@raymondckearney.com" className="bg-white text-brand-500 font-semibold px-6 py-3 rounded-full hover:bg-brand-50 transition-colors">
-                Send an Email
-              </a>
-              <a href="https://www.linkedin.com/in/raymondckearney/" target="_blank" rel="noopener noreferrer" className="border border-white/40 text-white font-semibold px-6 py-3 rounded-full hover:bg-white/10 transition-colors">
-                Connect on LinkedIn
-              </a>
-            </div>
-          </div>
-        </section>
       </main>
     </>
   );
