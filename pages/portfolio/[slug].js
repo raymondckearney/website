@@ -17,15 +17,15 @@ const projects = {
       'Enhanced ways of working for the Product Management, Design and Engineering teams to foster stronger collaboration and coordination',
       'Devised an "innovation Circle" among cross functional leaders to infuse innovation and cutting-edge experience design through the app design process',
     ],
-    // Optional extra images — drop files at public/portfolio/new-app-design-gallery-[1-5].jpg etc.
+    moodImage: '/portfolio/new-app-mood-dark.jpg',
     galleryImages: [
-      '/portfolio/new-app-design-gallery-1.jpg',
-      '/portfolio/new-app-design-gallery-2.jpg',
-      '/portfolio/new-app-design-gallery-3.jpg',
-      '/portfolio/new-app-design-gallery-4.jpg',
-      '/portfolio/new-app-design-gallery-5.jpg',
+      '/portfolio/phone-cantina.jpg',
+      '/portfolio/phone-crunchy-taco.jpg',
+      '/portfolio/phone-rewards-landing.jpg',
+      '/portfolio/phone-decades.jpg',
+      '/portfolio/phone-rewards.jpg',
     ],
-    featuredImage: '/portfolio/new-app-design-featured.jpg',
+    featuredImage: '/portfolio/phone-with-background-luxe.jpg',
     nextSlug: 'creating-a-design-system',
     nextTitle: 'Creating a Design System',
     prevSlug: null,
@@ -180,23 +180,19 @@ export default function ProjectDetail() {
           </div>
         </section>
 
-        {/* ── Gallery + Impact ── */}
+        {/* ── Mood image + Impact ── */}
         {project.impact.length > 0 && (
           <section className="flex flex-col lg:flex-row min-h-[400px]">
-            {/* Left: overflow gallery of screenshots */}
-            <div className="w-full lg:w-[58%] overflow-x-auto bg-black flex items-stretch">
-              <div className="flex flex-nowrap h-full min-h-[360px]">
-                {project.galleryImages.map((src, i) => (
-                  <img
-                    key={i}
-                    src={src}
-                    alt=""
-                    className="h-full object-cover flex-shrink-0"
-                    style={{ maxWidth: '300px' }}
-                    onError={(e) => { e.target.style.display = 'none'; }}
-                  />
-                ))}
-              </div>
+            {/* Left: mood/collage image */}
+            <div className="w-full lg:w-[58%] bg-black overflow-hidden min-h-[360px]">
+              {project.moodImage && (
+                <img
+                  src={project.moodImage}
+                  alt=""
+                  className="w-full h-full object-cover"
+                  style={{ minHeight: '360px' }}
+                />
+              )}
             </div>
 
             {/* Right: My Impact bullets */}
