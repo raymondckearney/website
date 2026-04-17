@@ -33,10 +33,33 @@ const projects = {
   },
   'creating-a-design-system': {
     title: 'Creating a Design System',
-    heroTitle: 'Building a scalable design system for Taco Bell',
+    heroTitle: 'Strengthening the brand through meaningful, consistent, and cohesive design',
     heroImage: '/portfolio/creating-a-design-system.jpg',
     heroBg: '#2d1463',
-    impact: [],
+    impact: [
+      'Sold the value of developing a design system and worked to educate and persuade engineering and product partners to prioritize the work to collaboratively create a design system to enhance consistency across the digital experience and increase efficiency across multiple teams.',
+      "Led the creation of Taco Bell's first digital design system through partnership with the engineering team leading work on tokens, components, design standards, documentation, system structure and process.",
+      'Set the vision and strategy ensuring execution of a robust and flexible system enhancing efficiency for both design and engineering teams and freeing up capacity to focus on more strategic design challenges',
+      'Hired, organized and oversaw a dedicated team to ensure the design system was well structured to create a shared foundation for digital design across the business.',
+      'Ensured accessibility in the system through adherence to WCAG standards and testing within the system and with appropriate audiences to ensure a foundation for accessible design',
+      'Planned for scalability with initial focus on the mobile experience and next steps to expand the approach to create connected systems across all digital channels (web, kiosk, digital menu boards, etc.)',
+    ],
+    moodImage: '/portfolio/creating-a-design-system-mood.jpg',
+    descriptionContent: {
+      statement: 'The goal of the the design system was to enhance the aesthetic appeal and create a cohesive, accessible, and scalable design system that supports Taco Bell across all digital channels.',
+      body: "The framework empowers the design team with a unified vision and a practical toolkit, establishing a digital-first approach that reflects Taco Bell's brand values consistently and effectively.",
+      oversawLabel: "I oversaw the team's work on:",
+      oversawItems: [
+        { bold: 'Base Palettes', text: '—covering color, brand, functional, and neutral tones—ensuring that our brand identity remains clear and cohesive across all touchpoints.' },
+        { bold: 'Semantic Colors', text: ' used for background, foreground, borders, and accents to bring clarity to the visual language of our UI, aligning with contrast consistency and accessibility standards. Structured a typographic system defining Fonts, Styles, Hierarchy, and Logic to achieve clear communication and a strong visual flow.' },
+        { bold: 'Spacing principles', text: ' were meticulously outlined through grids, logic, and tokens to maintain harmony and balance throughout layouts.' },
+        { bold: 'Depth guidelines', text: ', such as elevation styles, shadows, and focus indicators, were added to convey interaction states effectively and enhance the user experience. Defined Borders (radii and width specifications),' },
+      ],
+    },
+    descriptionImages: [
+      '/portfolio/design-system-components.jpg',
+      '/portfolio/design-system-app-screens.jpg',
+    ],
     galleryImages: [],
     featuredImage: null,
     nextSlug: 'shaping-organizational-culture',
@@ -204,6 +227,37 @@ export default function ProjectDetail() {
                   </li>
                 ))}
               </ul>
+            </div>
+          </section>
+        )}
+
+        {/* ── Description text + images ── */}
+        {project.descriptionContent && (
+          <section className="flex flex-col lg:flex-row border-t border-gray-100">
+            <div className="w-full lg:w-[45%] px-10 xl:px-14 py-14 flex flex-col justify-start">
+              <p className="text-xl font-bold leading-snug mb-6">{project.descriptionContent.statement}</p>
+              <p className="text-sm text-gray-600 leading-relaxed mb-6">{project.descriptionContent.body}</p>
+              <p className="text-sm mb-4">{project.descriptionContent.oversawLabel}</p>
+              <div className="space-y-4">
+                {project.descriptionContent.oversawItems.map((item, i) => (
+                  <p key={i} className="text-sm leading-relaxed">
+                    <strong>{item.bold}</strong>{item.text}
+                  </p>
+                ))}
+              </div>
+            </div>
+            <div className="w-full lg:w-[55%] px-6 xl:px-10 py-14">
+              <div className="grid grid-cols-2 gap-3">
+                {project.descriptionImages?.map((src, i) => (
+                  <img
+                    key={i}
+                    src={src}
+                    alt=""
+                    className="w-full h-auto object-cover"
+                    onError={(e) => { e.target.style.display = 'none'; }}
+                  />
+                ))}
+              </div>
             </div>
           </section>
         )}
