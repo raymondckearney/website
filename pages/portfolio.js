@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 
 const projects = [
   { slug: 'new-app-design',                    title: 'New App Design' },
@@ -26,7 +27,7 @@ export default function Portfolio() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map(({ slug, title }) => (
-            <div key={slug} className="group cursor-pointer">
+            <Link key={slug} href={`/portfolio/${slug}`} className="group block">
               <div className="overflow-hidden bg-gray-200 aspect-[4/3] w-full">
                 <img
                   src={`/portfolio/${slug}.jpg`}
@@ -36,7 +37,7 @@ export default function Portfolio() {
                 />
               </div>
               <h2 className="mt-3 text-base font-bold text-black">{title}</h2>
-            </div>
+            </Link>
           ))}
         </div>
       </main>
