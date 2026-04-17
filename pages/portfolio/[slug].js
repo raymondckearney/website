@@ -34,7 +34,7 @@ const projects = {
   'creating-a-design-system': {
     title: 'Creating a Design System',
     heroTitle: 'Strengthening the brand through meaningful, consistent, and cohesive design',
-    heroImage: '/portfolio/creating-a-design-system.jpg',
+    heroImage: '/portfolio/gradients.jpg',
     heroBg: '#2d1463',
     impact: [
       'Sold the value of developing a design system and worked to educate and persuade engineering and product partners to prioritize the work to collaboratively create a design system to enhance consistency across the digital experience and increase efficiency across multiple teams.',
