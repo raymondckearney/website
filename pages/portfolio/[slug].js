@@ -69,12 +69,34 @@ const projects = {
   },
   'shaping-organizational-culture': {
     title: 'Shaping Organizational Culture',
-    heroTitle: 'Shaping organizational culture at Taco Bell Digital & Tech',
+    heroTitle: 'Creating culture: Bringing a newly formed, 300+ person organization together',
     heroImage: '/portfolio/shaping-organizational-culture.jpg',
+    heroStyle: 'split',
     heroBg: '#1c1c2e',
-    impact: [],
-    galleryImages: [],
-    featuredImage: null,
+    impactHeading: 'Creating a code to bring people together',
+    impact: [
+      'Led the leadership team in identifying key and values that we wanted to engender as an organization',
+      'Worked to articulate the key values and beliefs into a Digital and Tech Code with 9 key principles that very intentionally codified key behaviors and attitudes that support the desired culture of the new division',
+      'Developed a vision for bringing the D&T Code to life through visuals, practices, incentives and recognition and adoption of the principles in employee and team actions',
+      'Created a strategy and plan for adoption and usage of the code inspiring leadership to use it with their teams and to inspire action and change at all levels in the organization',
+      'Created design assets (imagery, icons, backgrounds, templates, cards, pins) to support recognition and inspire excitement around the code',
+      'Worked with the leadership team to embed the principles into communications, presentations, conversations and planning with their teams to ensure widespread adoption',
+    ],
+    moodImage: '/portfolio/org-culture-digital-code.jpg',
+    featuredImage: '/portfolio/org-culture-code-panels.jpg',
+    featuredBg: 'white',
+    galleryImages: [
+      '/portfolio/org-culture-card-1.jpg',
+      '/portfolio/org-culture-card-2.jpg',
+      '/portfolio/org-culture-card-3.jpg',
+      '/portfolio/org-culture-card-4.jpg',
+      '/portfolio/org-culture-card-5.jpg',
+      '/portfolio/org-culture-card-6.jpg',
+      '/portfolio/org-culture-card-7.jpg',
+      '/portfolio/org-culture-card-8.jpg',
+      '/portfolio/org-culture-card-9.jpg',
+    ],
+    galleryStyle: 'grid',
     nextSlug: 'global-wealth-management-firm',
     nextTitle: 'Global Wealth Management Firm',
     prevSlug: 'creating-a-design-system',
@@ -184,28 +206,46 @@ export default function ProjectDetail() {
       <main>
 
         {/* ── Hero ── */}
-        <section className="relative overflow-hidden" style={{ minHeight: '90vh' }}>
-          <img
-            src={project.heroImage}
-            alt={project.title}
-            className="absolute inset-0 w-full h-full object-cover"
-          />
-          <div
-            className="absolute inset-0"
-            style={{ background: `linear-gradient(to right, ${project.heroBg}ee 40%, ${project.heroBg}44 75%, transparent 100%)` }}
-          />
-          <div className="relative flex items-end p-10 xl:p-16" style={{ minHeight: '90vh' }}>
-            <h1 className="text-3xl xl:text-5xl font-black text-white leading-tight max-w-lg">
-              {project.heroTitle}
-            </h1>
-          </div>
-        </section>
+        {project.heroStyle === 'split' ? (
+          <section className="flex flex-col lg:flex-row" style={{ minHeight: '90vh' }}>
+            <div className="w-full lg:w-1/2 flex items-center px-10 xl:px-16 py-20 bg-gray-100">
+              <h1 className="text-3xl xl:text-5xl font-black text-gray-900 leading-tight">
+                {project.heroTitle}
+              </h1>
+            </div>
+            <div className="w-full lg:w-1/2 overflow-hidden" style={{ minHeight: '400px' }}>
+              <img
+                src={project.heroImage}
+                alt={project.title}
+                className="w-full h-full object-cover"
+                style={{ minHeight: '400px' }}
+              />
+            </div>
+          </section>
+        ) : (
+          <section className="relative overflow-hidden" style={{ minHeight: '90vh' }}>
+            <img
+              src={project.heroImage}
+              alt={project.title}
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+            <div
+              className="absolute inset-0"
+              style={{ background: `linear-gradient(to right, ${project.heroBg}ee 40%, ${project.heroBg}44 75%, transparent 100%)` }}
+            />
+            <div className="relative flex items-end p-10 xl:p-16" style={{ minHeight: '90vh' }}>
+              <h1 className="text-3xl xl:text-5xl font-black text-white leading-tight max-w-lg">
+                {project.heroTitle}
+              </h1>
+            </div>
+          </section>
+        )}
 
         {/* ── Mood image + Impact ── */}
         {project.impact.length > 0 && (
           <section className="flex flex-col lg:flex-row min-h-[400px]">
             {/* Left: mood/collage image */}
-            <div className="w-full lg:w-[58%] bg-black overflow-hidden min-h-[360px]">
+            <div className="w-full lg:w-[58%] bg-gray-100 overflow-hidden min-h-[360px]">
               {project.moodImage && (
                 <img
                   src={project.moodImage}
@@ -216,9 +256,13 @@ export default function ProjectDetail() {
               )}
             </div>
 
-            {/* Right: My Impact bullets */}
+            {/* Right: heading + bullets */}
             <div className="w-full lg:w-[42%] px-10 xl:px-14 py-12 flex flex-col justify-center">
-              <h2 className="text-lg font-bold mb-5">My Impact:</h2>
+              {project.impactHeading ? (
+                <h2 className="text-2xl xl:text-3xl font-bold mb-6">{project.impactHeading}</h2>
+              ) : (
+                <h2 className="text-lg font-bold mb-5">My Impact:</h2>
+              )}
               <ul className="space-y-4">
                 {project.impact.map((point, i) => (
                   <li key={i} className="flex gap-3 text-sm leading-relaxed">
@@ -264,7 +308,10 @@ export default function ProjectDetail() {
 
         {/* ── Featured large image ── */}
         {project.featuredImage && (
-          <section className="bg-black py-16 flex justify-center">
+          <section
+            className="py-16 flex justify-center"
+            style={{ background: project.featuredBg === 'white' ? '#fff' : '#000' }}
+          >
             <img
               src={project.featuredImage}
               alt=""
@@ -274,21 +321,37 @@ export default function ProjectDetail() {
           </section>
         )}
 
-        {/* ── 5-phone gallery row ── */}
-        {project.galleryImages.length > 0 && (
-          <section className="py-12 px-6 xl:px-10">
-            <div className="flex gap-4 justify-center overflow-x-auto">
-              {project.galleryImages.map((src, i) => (
-                <img
-                  key={i}
-                  src={src}
-                  alt=""
-                  className="h-[480px] w-auto object-contain flex-shrink-0"
-                  onError={(e) => { e.target.style.display = 'none'; }}
-                />
-              ))}
-            </div>
-          </section>
+        {/* ── Gallery ── */}
+        {project.galleryImages?.length > 0 && (
+          project.galleryStyle === 'grid' ? (
+            <section className="py-12 px-6 xl:px-10">
+              <div className="grid grid-cols-2 gap-4 max-w-4xl mx-auto">
+                {project.galleryImages.map((src, i) => (
+                  <img
+                    key={i}
+                    src={src}
+                    alt=""
+                    className={`w-full h-auto object-cover${project.galleryImages.length % 2 !== 0 && i === project.galleryImages.length - 1 ? ' col-span-2 max-w-[50%] mx-auto' : ''}`}
+                    onError={(e) => { e.target.parentElement?.classList.add('hidden'); e.target.style.display = 'none'; }}
+                  />
+                ))}
+              </div>
+            </section>
+          ) : (
+            <section className="py-12 px-6 xl:px-10">
+              <div className="flex gap-4 justify-center overflow-x-auto">
+                {project.galleryImages.map((src, i) => (
+                  <img
+                    key={i}
+                    src={src}
+                    alt=""
+                    className="h-[480px] w-auto object-contain flex-shrink-0"
+                    onError={(e) => { e.target.style.display = 'none'; }}
+                  />
+                ))}
+              </div>
+            </section>
+          )
         )}
 
         {/* ── Prev / Next navigation ── */}
