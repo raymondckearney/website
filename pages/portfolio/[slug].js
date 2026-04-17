@@ -161,22 +161,20 @@ export default function ProjectDetail() {
       <main>
 
         {/* ── Hero ── */}
-        <section className="flex flex-col md:flex-row" style={{ minHeight: '90vh' }}>
+        <section className="relative overflow-hidden" style={{ minHeight: '90vh' }}>
+          <img
+            src={project.heroImage}
+            alt={project.title}
+            className="absolute inset-0 w-full h-full object-cover"
+          />
           <div
-            className="w-full md:w-[55%] flex items-end p-10 xl:p-16"
-            style={{ backgroundColor: project.heroBg, minHeight: '50vh' }}
-          >
+            className="absolute inset-0"
+            style={{ background: `linear-gradient(to right, ${project.heroBg}ee 40%, ${project.heroBg}44 75%, transparent 100%)` }}
+          />
+          <div className="relative flex items-end p-10 xl:p-16" style={{ minHeight: '90vh' }}>
             <h1 className="text-3xl xl:text-5xl font-black text-white leading-tight max-w-lg">
               {project.heroTitle}
             </h1>
-          </div>
-          <div className="w-full md:w-[45%] overflow-hidden" style={{ minHeight: '50vh' }}>
-            <img
-              src={project.heroImage}
-              alt={project.title}
-              className="w-full h-full object-cover"
-              style={{ minHeight: '50vh' }}
-            />
           </div>
         </section>
 
