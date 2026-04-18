@@ -314,10 +314,37 @@ const projects = {
   },
   'experience-strategy-podcast': {
     title: 'Experience Strategy and Design Podcast',
-    heroTitle: 'eXperience unwrapped: behind the scenes of human centered experiences',
+    heroTitle: 'BRINGING THE WORLD OF EXPERIENCE DESIGN TO LIFE THROUGH AUDIO',
     heroImage: '/portfolio/experience-strategy-podcast.jpg',
+    heroStyle: 'split',
     heroBg: '#c0192b',
     impact: [],
+    moodImage: '/portfolio/podcast-collage.jpg',
+    richImpact: [
+      {
+        label: 'THE PROBLEM',
+        body: 'There are so many elements and facets to Experience work that are underutilized or misunderstood. Many industry practitioners and business leaders do not understand the nuances and power of Experience Design so we created a medium to break it down, make it interesting, and share it with the business world.',
+      },
+      {
+        label: 'OUR HYPOTHESIS',
+        body: 'By interviewing experts in the world of Experience Strategy and Experience Design we can help spread good practices to help ensure that Experience is something that is thoughtfully considered in every project. Design thinking and Human Centered Design approaches enhance any project and are relevant in any type of work.',
+      },
+      {
+        label: 'MY CONTRIBUTIONS',
+        body: 'I started the first and only Experience Strategy and Design podcast within PwC. I developed the idea, gathered a team, built a plan, and secured funding to create and host a podcast to take listeners into the world of Experience Strategy and Design and dive into how world class, human centered experiences are created.',
+        bullets: [
+          'Developed the vision for the podcast and designed the structure of the episodes to be engaging, informative, and relatable and to appeal to specialized and general audiences',
+          'Recruited a team to strategize, plan, and produce the podcast and dedicate time outside of typical work responsibilities to deliver a product we are all passionate about',
+          'Coached team members and provided opportunities to grow new skill sets (i.e interviewing, sound editing, product marketing, creating and publishing content, branding)',
+          "Created a new way to showcase my team's expertise and build awareness of the work we do and how it can be beneficial in a variety of fields, industries, and projects",
+          'Organized a contest to crowdsource the Experience Unwrapped cover art design and market the new podcast to grow listenership',
+        ],
+      },
+      {
+        label: 'THE RESULT',
+        body: 'Created a global reaching podcast series available to the entire global PwC firm that has served to inform and educate on the world of Experience Strategy and Design and bring the field in the spotlight across industries',
+      },
+    ],
     galleryImages: [],
     featuredImage: null,
     nextSlug: null,
