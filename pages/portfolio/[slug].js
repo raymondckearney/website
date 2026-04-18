@@ -108,7 +108,7 @@ const projects = {
     heroStyle: 'split',
     heroBg: '#0d2d1e',
     impact: [],
-    moodImage: '/portfolio/wealth-mgmt-content.jpg',
+    moodImage: '/portfolio/fisher-collage.jpg',
     richImpact: [
       {
         label: 'THE PROBLEM',
