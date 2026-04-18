@@ -194,7 +194,7 @@ const projects = {
     heroStyle: 'split',
     heroBg: '#0a2540',
     impact: [],
-    moodImage: '/portfolio/national-fin-collage.jpg',
+    moodImage: '/portfolio/pheaa-collage.jpg',
     richImpact: [
       {
         label: 'THE PROBLEM',
