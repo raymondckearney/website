@@ -189,10 +189,40 @@ const projects = {
   },
   'national-financial-services': {
     title: 'National Financial Services Organization',
-    heroTitle: 'Transforming student loan service through human-centered design',
+    heroTitle: 'DESIGNING A CUSTOMER-CENTRIC ORGANIZATION TO DELIVER A PERSONALIZED CLIENT EXPERIENCE',
     heroImage: '/portfolio/national-financial-services.jpg',
+    heroStyle: 'split',
     heroBg: '#0a2540',
     impact: [],
+    moodImage: '/portfolio/national-fin-collage.jpg',
+    richImpact: [
+      {
+        label: 'THE PROBLEM',
+        body: 'The company leadership sought to understand their CX capabilities relative to competitors, identify opportunities to deliver an improved experience for their clients, and stand up an organization to champion CX initiatives and own accountability for the client experience.',
+      },
+      {
+        label: 'OUR HYPOTHESIS',
+        body: "The strategy's success would be dependent on the client's ability to execute on it. Our team focused equally on creating the experience vision and strategy and creating an operating model to deliver on the strategy to help the organization become more customer centric.",
+      },
+      {
+        label: 'MY CONTRIBUTIONS',
+        body: 'I oversaw the organizational design for the new CX (Customer Experience) organization and drove the digital experience vision. I acted as the VP of Customer Experience to launch and grow the new division; built a team of 4 managers and 30+ team members, and created and executed the organization\'s CX strategy.',
+        bullets: [
+          'Co-developed digital experience vision leading the strategy team and working with creative team to develop innovative ideas and design mockups',
+          'Devised the framework and maturity model used and led the assessment of the organization based on their capabilities across 6 key categories relating to CX',
+          'Led several collaborative client workshops to refine experience vision and organizational design and enhance alignment among key stakeholders in the organization',
+          'Designed the new CX division including organizational structure, capabilities, governance model, roles and reporting, job descriptions, and operating model',
+          'Led the new division as the interim VP of Customer Experience and built a team of 30+ through external hiring and internal recruiting and training',
+          'Created the CX Charter, mission, goals, and objectives and worked with CEO and C-Suite leadership to create an enterprise customer experience strategy',
+          'Oversaw training for CX managers on design thinking and empowered them to train their teams in collaboration and results-driven accountability.',
+          'Directed the hiring and and training of new CX staff including the new replacement for VP of Customer Experience',
+        ],
+      },
+      {
+        label: 'THE RESULT',
+        body: 'Developed the components and processes necessary to stand up a successful CX organization to achieve CX future state vision and left the client with a fully operational CX team that was already making an impact. We developed a clear and solid plan for the organization to move CX forward at all levels and helped create a more customer centric culture as a whole.',
+      },
+    ],
     galleryImages: [],
     featuredImage: null,
     nextSlug: 'global-food-retailer',
