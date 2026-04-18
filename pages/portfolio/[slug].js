@@ -277,7 +277,7 @@ const projects = {
     heroStyle: 'split',
     heroBg: '#1a1a1a',
     impact: [],
-    moodImage: '/portfolio/snack-beverage-collage.jpg',
+    moodImage: '/portfolio/frito-collage.jpg',
     richImpact: [
       {
         label: 'THE PROBLEM',
