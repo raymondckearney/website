@@ -103,10 +103,40 @@ const projects = {
   },
   'global-wealth-management-firm': {
     title: 'Global Wealth Management Firm',
-    heroTitle: 'Reimagining the wealth management client experience',
+    heroTitle: 'REIMAGINING THE CLIENT & EMPLOYEE EXPERIENCE',
     heroImage: '/portfolio/global-wealth-management-firm.jpg',
+    heroStyle: 'split',
     heroBg: '#0d2d1e',
     impact: [],
+    moodImage: '/portfolio/wealth-mgmt-content.jpg',
+    richImpact: [
+      {
+        label: 'THE PROBLEM',
+        body: 'This global wealth management firm needed a digital experience to complement its high-quality high touch advisor experience and to improve advisor efficiency. Additionally, the firm was plagued outdated technology and  manual and complicated processes lacking efficient workflow.  They sought our help in creating a world class digital experience for their clients and employees.',
+      },
+      {
+        label: 'OUR HYPOTHESIS',
+        body: 'Making the experience real and tangible for executives through vivid storytelling, depicting the future experience for their advisors and clients, will engender alignment around a common vision and enable a unified, focused approach moving forward.',
+      },
+      {
+        label: 'MY CONTRIBUTIONS',
+        body: 'I oversaw the lifecycle of the project and managed teams in: research, experience strategy, UX and UI Design, business case and roadmap development. Trained multiple PwC  teams in design thinking and human centered design approaches and oversaw the training of client teams. I worked closely with the owner and c-suite leadership of the firm to instill collaborative and innovative new ways of working throughout the organization.',
+        bullets: [
+          'Directed discovery work including qualitative and quantitative research plans, advisor and client interviews and focus groups, and technology usage mapping',
+          'Led the design and execution of a quantitative client survey used to create robust client personas based on behavioral preferences and characteristics. Utilized k-means clustering to inform persona creation.',
+          'Ran translation of research data to create advisor and client personas and current state journey map highlighting pain points and opportunities for enhancement in the experience',
+          'Created a customer centric future journey and showcased it through the dynamic and emblematic story of "David," an example client, as he experienced significant life events and interacted with his advisor, "Lauren" throughout his journey.',
+          'Developed a creative brief and oversaw the creation of design mockups to showcase the vision for the future state experience of advisors and clients.',
+          'Spearheaded the strategy, design, and creation of a dynamic and immersive physical space utilizing video, audio, visual and tactile elements to tell the story of "David" and "Lauren" and showcase the new advisor and client experience.',
+          'Oversaw the creation of a roadmap to layout the plan for technology, process, and cultural changes needed to carry out the future experience vision',
+          'Designed a collaboration model unifying employees and accelerating work through collaborative design sessions and design thinking principles throughout the organization.',
+        ],
+      },
+      {
+        label: 'THE RESULT',
+        body: 'Firm-wide alignment to the north star of their future client and employee experience.   Our client now possessed a detailed, program wide roadmap outlining the steps necessary to realize their world class digital experience. This roadmap included the user research and designs for immediate next steps. The completion of this project resulted in radical acceleration of the Firm\'s goal to deliver new client and advisor digital experiences. Immediately following completion of this project we began technology design work.',
+      },
+    ],
     galleryImages: [],
     featuredImage: null,
     nextSlug: 'large-utility-provider',
@@ -241,7 +271,7 @@ export default function ProjectDetail() {
         )}
 
         {/* ── Mood image + Impact ── */}
-        {project.impact.length > 0 && (
+        {(project.impact.length > 0 || project.richImpact) && (
           <section className="flex flex-col lg:flex-row min-h-[400px]">
             {/* Left: mood/collage image */}
             <div className="w-full lg:w-[58%] bg-gray-100 overflow-hidden min-h-[360px]">
@@ -255,21 +285,42 @@ export default function ProjectDetail() {
               )}
             </div>
 
-            {/* Right: heading + bullets */}
-            <div className="w-full lg:w-[42%] px-10 xl:px-14 py-12 flex flex-col justify-center">
-              {project.impactHeading ? (
-                <h2 className="text-2xl xl:text-3xl font-bold mb-6">{project.impactHeading}</h2>
+            {/* Right: standard bullets OR rich labeled sections */}
+            <div className="w-full lg:w-[42%] px-10 xl:px-14 py-12 flex flex-col justify-start">
+              {project.richImpact ? (
+                project.richImpact.map((section, i) => (
+                  <div key={i} className="mb-7">
+                    <h3 className="font-bold text-sm mb-2">{section.label}</h3>
+                    {section.body && <p className="text-sm leading-relaxed mb-3 text-gray-700">{section.body}</p>}
+                    {section.bullets && (
+                      <ul className="space-y-3">
+                        {section.bullets.map((b, j) => (
+                          <li key={j} className="flex gap-3 text-sm leading-relaxed">
+                            <span className="mt-1.5 shrink-0">•</span>
+                            <span>{b}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </div>
+                ))
               ) : (
-                <h2 className="text-lg font-bold mb-5">My Impact:</h2>
+                <>
+                  {project.impactHeading ? (
+                    <h2 className="text-2xl xl:text-3xl font-bold mb-6">{project.impactHeading}</h2>
+                  ) : (
+                    <h2 className="text-lg font-bold mb-5">My Impact:</h2>
+                  )}
+                  <ul className="space-y-4">
+                    {project.impact.map((point, i) => (
+                      <li key={i} className="flex gap-3 text-sm leading-relaxed">
+                        <span className="mt-1.5 shrink-0">•</span>
+                        <span>{point}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </>
               )}
-              <ul className="space-y-4">
-                {project.impact.map((point, i) => (
-                  <li key={i} className="flex gap-3 text-sm leading-relaxed">
-                    <span className="mt-1.5 shrink-0">•</span>
-                    <span>{point}</span>
-                  </li>
-                ))}
-              </ul>
             </div>
           </section>
         )}
