@@ -232,10 +232,37 @@ const projects = {
   },
   'global-food-retailer': {
     title: 'Global Food Retailer',
-    heroTitle: 'Elevating the digital ordering experience for a global food retailer',
+    heroTitle: 'INCREASING BRAND LOYALTY AND ENHANCING THE CUSTOMER EXPERIENCE',
     heroImage: '/portfolio/global-food-retailer.jpg',
+    heroStyle: 'split',
     heroBg: '#7b1200',
     impact: [],
+    moodImage: '/portfolio/chipotle-collage.jpg',
+    richImpact: [
+      {
+        label: 'THE PROBLEM',
+        body: 'The quick-service and fast-casual restaurant market has seemingly unlimited options for customers to choose from, making it difficult to differentiate. The client had been struggling to retain customers after food borne illnesses damaged the brand. The client had very little customer data, and wanted to design a loyalty program to capture customer information that would enable targeting segments to increase frequency and retaining high-value customers to grow sales comp and the bottom line.',
+      },
+      {
+        label: 'OUR HYPOTHESIS',
+        body: 'Two things customers value most are a trustworthy brand and being rewarded for their loyalty. Without a mechanism to collect customer data, like a loyalty program, companies are unable to recognize repeat customer behavior to reward them, encourage and incentivize new purchases, and build an ongoing trusting relationship with each consumer',
+      },
+      {
+        label: 'MY CONTRIBUTIONS',
+        body: 'I directed the strategy efforts to understand the state of the business and customer loyalty concerns and oversaw the design team ensuring that ideas and concepts translated to customer adoption and loyalty and would ultimately enhance the experience customers had with the brand.',
+        bullets: [
+          'Led the collection of strategic research and data to inform the loyalty program and incentive design',
+          'Guided the design work through the creation of a creative experience brief to highlight important strategic elements to be included in the creative and operational design if the program',
+          'Generated dozens of loyalty ideas and worked to combine them into concepts to engender customer loyalty through return visits, higher frequency purchases, and larger basket size',
+          'Facilitated collaborative prioritization of loyalty concepts in a multi-day session with the client to prioritize the concepts to model out',
+          'Oversaw creation of design mockups to accurately represent loyalty concepts and ensured the design was aligned with consumer insights and research findings',
+        ],
+      },
+      {
+        label: 'THE RESULT',
+        body: 'Within the first few months of the launch the loyalty app had been downloaded by 5M people. The loyalty program is now using customer data to more effectively target and engage lapsed users and increase visit and purchase frequency. Data has shown that loyalty members increased purchase frequency after joining the program.',
+      },
+    ],
     galleryImages: [],
     featuredImage: null,
     nextSlug: 'global-snack-beverage-distributer',
