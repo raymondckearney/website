@@ -151,7 +151,7 @@ const projects = {
     heroStyle: 'split',
     heroBg: '#0a2540',
     impact: [],
-    moodImage: '/portfolio/utility-content.jpg',
+    moodImage: '/portfolio/njr-collage.jpg',
     richImpact: [
       {
         label: 'THE PROBLEM',
