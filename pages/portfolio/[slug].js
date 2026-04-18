@@ -272,10 +272,39 @@ const projects = {
   },
   'global-snack-beverage-distributer': {
     title: 'Global Snack and Beverage Distributer',
-    heroTitle: 'Growing snack sales through a B2B digital platform',
+    heroTitle: 'REDEFINING THE FUTURE OF GTM AND SALES EXECUTION',
     heroImage: '/portfolio/global-snack-beverage-distributer.jpg',
+    heroStyle: 'split',
     heroBg: '#1a1a1a',
     impact: [],
+    moodImage: '/portfolio/snack-beverage-collage.jpg',
+    richImpact: [
+      {
+        label: 'THE PROBLEM',
+        body: 'Rapid changes in employee demographics, user preferences, customer expectations, and technological advancement are driving constant change. The client was getting by with temporary patches, home grown systems, and siloed data which was adding extra strain on already overextended frontline team members, directly impacting employee attrition and creating a staffing crisis.',
+      },
+      {
+        label: 'OUR HYPOTHESIS',
+        body: 'Gaining a deep understanding of employee processes, sentiments, and technology through ethnographic research would enable the creation of a robust new Go-T-Market and Sales strategy that would enhance productivity, efficiency, and adoption of on the job tools and technology.',
+      },
+      {
+        label: 'MY CONTRIBUTIONS',
+        body: 'I led global research efforts gathering insights from teams in the US and Mexico to understand the needs of people throughout the distribution process. This required a cultural understanding of work in multiple countries and capitalized on my proficiency in Spanish. I also led strategic work across four business unit work streams to build unique solutions for new technology requirements to enhance frontline staff productivity',
+        bullets: [
+          'Designed and led ethnographic research approach observing and interviewing distribution staff, leads and supervisors through distribution centers, store visits and ride alongs on delivery routes',
+          'Oversaw the design and facilitation of multiple collaborative workshops to develop requirements and user stories for new technology solutions',
+          'Directed efforts of multiple scrum teams across several sprints to utilize research insights to quickly iterate on technology designs providing an enhanced experience for employees in the field',
+          'Led the Experience Team in generating insights and in working with the Technology and Business Teams to ensure that the end user experience was the focus of the design',
+          'Identified the key issues facing Frontline teams with sales representatives arriving at each stop on their route unsure of what they will encounter inside to enable them to pivot and operate with grace under pressure.',
+          'Leveraged insights collected in market to develop future state process flows designed to address the key issues facing Sales Reps',
+          'Mapped future state flows to a correlating list of user stories and features to scope and prioritize the effort needed to bring these future flows to life',
+        ],
+      },
+      {
+        label: 'THE RESULT',
+        body: 'Empowered frontline teams to quickly adapt to an evolving retail ecosystem by enhancing collaboration, elevating customer experience, and improving resiliency in order to deliver demand-based perfect service. We took actionable insights and increased agility and improved team collaboration throughout the organization',
+      },
+    ],
     galleryImages: [],
     featuredImage: null,
     nextSlug: 'experience-strategy-podcast',
