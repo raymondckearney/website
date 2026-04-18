@@ -146,10 +146,40 @@ const projects = {
   },
   'large-utility-provider': {
     title: 'Large Utility Provider',
-    heroTitle: 'Designing the future of utility service experiences',
+    heroTitle: 'TRANSFORMING A COMPANY THROUGH DIGITAL EXPERIENCE',
     heroImage: '/portfolio/large-utility-provider.jpg',
+    heroStyle: 'split',
     heroBg: '#0a2540',
     impact: [],
+    moodImage: '/portfolio/utility-content.jpg',
+    richImpact: [
+      {
+        label: 'THE PROBLEM',
+        body: 'With almost no digital presence, this company lacked the ability to provide an experience to meet customers\' ever-growing expectations. Additionally, their internal processes were analog and inefficient, and their technology was outdated, causing inefficiencies for employees and limiting the capabilities of the organization. This large utility company wanted to transform its organization to facilitate an enhanced digital first, customer centric, experience and enable it operationally.',
+      },
+      {
+        label: 'OUR HYPOTHESIS',
+        body: 'Developing a robust digital strategy would help the client move into the digital age and create operational efficiencies while enhancing the experience for their employees and customers.',
+      },
+      {
+        label: 'MY CONTRIBUTIONS',
+        body: 'Led the experience strategy and design work streams across multiple projects and teams. I oversaw user research, digital strategy development, content assessment, digital style guide and branding, user story & requirements development and employee operations and experience work.',
+        bullets: [
+          'Created UX research plan and conducted dozens of customer and employee interviews and shadowing sessions to gather data and develop experience insights',
+          'Directed the creation of personas and day in the life journey maps to summarize findings and make the experience real highlighting key pain points and opportunities to enhance the experience',
+          'Translated insights and opportunities into initiatives to achieve the future experience vision and facilitated the prioritization of initiatives based in impact, cost and dependencies',
+          'Created the digital experience strategy and multi-year implementation roadmap with business justification for each initiative',
+          'Oversaw content and UX assessment of current "My Account" experience and developed recommendations',
+          'Guided experience design for the CRM implementation to optimize user adoption and increase employee efficiency by up to 20%',
+          'Led the creation of a new digital style guide introducing new branding and UX standards and invigorating the current brand while making it more relevant for a digital experience',
+          'Designed and facilitated collaborative, co-creative PI events with workshops to accelerate work, align teams, and engender innovative thinking',
+        ],
+      },
+      {
+        label: 'THE RESULT',
+        body: 'We delivered a multi-year roadmap guiding the organization\'s transformation to an innovative, user-friendly, digital-first customer experience. We leveraged business, experience, and technology perspectives and teams to address the way customers interact with the company and began working on several of the roadmap\'s initiatives.',
+      },
+    ],
     galleryImages: [],
     featuredImage: null,
     nextSlug: 'national-financial-services',
