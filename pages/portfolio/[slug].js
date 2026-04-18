@@ -109,6 +109,7 @@ const projects = {
     heroBg: '#0d2d1e',
     impact: [],
     moodImage: '/portfolio/fisher-collage.jpg',
+    moodImageFit: 'contain',
     richImpact: [
       {
         label: 'THE PROBLEM',
@@ -152,6 +153,7 @@ const projects = {
     heroBg: '#0a2540',
     impact: [],
     moodImage: '/portfolio/njr-collage.jpg',
+    moodImageFit: 'contain',
     richImpact: [
       {
         label: 'THE PROBLEM',
@@ -195,6 +197,7 @@ const projects = {
     heroBg: '#0a2540',
     impact: [],
     moodImage: '/portfolio/pheaa-collage.jpg',
+    moodImageFit: 'contain',
     richImpact: [
       {
         label: 'THE PROBLEM',
@@ -238,6 +241,7 @@ const projects = {
     heroBg: '#7b1200',
     impact: [],
     moodImage: '/portfolio/chipotle-collage.jpg',
+    moodImageFit: 'contain',
     richImpact: [
       {
         label: 'THE PROBLEM',
@@ -278,6 +282,7 @@ const projects = {
     heroBg: '#1a1a1a',
     impact: [],
     moodImage: '/portfolio/frito-collage.jpg',
+    moodImageFit: 'contain',
     richImpact: [
       {
         label: 'THE PROBLEM',
@@ -320,6 +325,7 @@ const projects = {
     heroBg: '#c0192b',
     impact: [],
     moodImage: '/portfolio/podcast-collage.jpg',
+    moodImageFit: 'contain',
     richImpact: [
       {
         label: 'THE PROBLEM',
@@ -417,13 +423,13 @@ export default function ProjectDetail() {
         {(project.impact.length > 0 || project.richImpact) && (
           <section className="flex flex-col lg:flex-row min-h-[400px]">
             {/* Left: mood/collage image */}
-            <div className="w-full lg:w-[58%] bg-gray-100 overflow-hidden min-h-[360px]">
+            <div className={`w-full lg:w-[58%] overflow-hidden min-h-[360px] flex items-center justify-center ${project.moodImageFit === 'contain' ? 'bg-white p-8' : 'bg-gray-100'}`}>
               {project.moodImage && (
                 <img
                   src={project.moodImage}
                   alt=""
-                  className="w-full h-full object-cover"
-                  style={{ minHeight: '360px' }}
+                  className={project.moodImageFit === 'contain' ? 'max-h-[480px] w-auto object-contain' : 'w-full h-full object-cover'}
+                  style={project.moodImageFit !== 'contain' ? { minHeight: '360px' } : {}}
                 />
               )}
             </div>
