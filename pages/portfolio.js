@@ -11,6 +11,7 @@ const projects = [
   { slug: 'global-food-retailer',              title: 'Global Food Retailer' },
   { slug: 'global-snack-beverage-distributer', title: 'Global Snack and Beverage Distributer' },
   { slug: 'experience-strategy-podcast',       title: 'Experience Strategy and Design Podcast' },
+  { slug: 'enhancing-collaboration',           title: 'Enhancing Collaboration' },
 ];
 
 export default function Portfolio() {
