@@ -370,27 +370,25 @@ const projects = {
     richImpact: [
       {
         label: 'THE PROBLEM',
-        body: 'Large-scale technology organizations often struggle with silos, misaligned incentives, and fragmented workflows that impede effective collaboration. As teams scale rapidly, the tools and processes that once enabled connection can become barriers to innovation, slowing the organization\'s ability to deliver high-quality user experiences at speed.',
+        body: 'Across a global organization serving brand clients at scale, silos between engineering, product management, and design were limiting the quality and speed of innovation. Teams lacked shared frameworks for collaboration, and a culture of human-centered thinking had yet to take root broadly across the organization.',
       },
       {
         label: 'OUR HYPOTHESIS',
-        body: 'By applying human-centered design principles to internal collaboration challenges, we could unlock new ways of working that would improve team cohesion, reduce friction, and accelerate the organization\'s ability to ship meaningful products. Better collaboration between design, engineering, and product would directly translate to better outcomes for users.',
+        body: 'By embedding UX thinking, structured ideation, and cross-functional collaboration practices into the DNA of the organization, we could strengthen agility, improve the quality of solutions, and inspire a culture of innovation that would benefit both internal teams and the brand clients they serve.',
       },
       {
         label: 'MY CONTRIBUTIONS',
-        body: 'As a User Experience Leader at Google, I led efforts to reimagine how teams collaborate across functions and geographies. I applied design thinking and experience strategy to both internal workflows and team culture to create the conditions for more effective and meaningful collaboration.',
+        body: 'As a User Experience Leader at Google, I led global programs and drove initiatives to build a stronger culture of collaboration, design thinking, and innovation across engineering, product, and design disciplines.',
         bullets: [
-          'Led cross-functional research to identify collaboration pain points and friction across design, engineering, and product teams',
-          'Facilitated design workshops and co-creation sessions to surface insights and align teams around shared goals and ways of working',
-          'Developed frameworks and playbooks to enable more effective collaboration across distributed and cross-functional teams',
-          'Partnered with senior leadership to embed collaboration best practices into team rituals, planning cycles, and review processes',
-          'Championed human-centered design approaches to internal organizational challenges, demonstrating the value of UX thinking beyond customer-facing products',
-          'Mentored and grew a team of UX practitioners, building capability and fostering a culture of curiosity, empathy, and craft',
+          'Facilitated cross-functional collaboration by bringing together engineering, product management, and design leaders for ideation and innovation workshops, strengthening organizational agility',
+          'Oversaw global programs (100+ staff) serving brand clients, optimizing hiring, training, collaboration and agile ways of working',
+          'Developed and presented "UX 101" strategy assets, inspiring empathy and collaboration among partners and influencing a culture of innovation across Google',
+          'Coached discipline leaders in leveraging "creative tension" across functions to develop more innovative solutions to business problems',
         ],
       },
       {
         label: 'THE RESULT',
-        body: 'Strengthened cross-functional collaboration across design, product, and engineering teams, creating more cohesive ways of working and a shared design culture. Improved team alignment and reduced friction in the product development process, enabling teams to deliver higher quality user experiences with greater speed and confidence.',
+        body: 'Built a stronger foundation for cross-functional collaboration and human-centered design thinking across a global organization. Teams developed more agile ways of working, and a culture of empathy and innovation took hold — improving the quality of solutions delivered to brand clients and elevating the role of UX across the organization.',
       },
     ],
     galleryImages: [],
