@@ -428,7 +428,7 @@ export default function ProjectDetail() {
                 <img
                   src={project.moodImage}
                   alt=""
-                  className={project.moodImageFit === 'contain' ? 'max-h-[480px] w-auto object-contain' : 'w-full h-full object-cover'}
+                  className={project.moodImageFit === 'contain' ? 'max-h-[576px] w-auto object-contain' : 'w-full h-full object-cover'}
                   style={project.moodImageFit !== 'contain' ? { minHeight: '360px' } : {}}
                 />
               )}
