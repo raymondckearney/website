@@ -360,10 +360,39 @@ const projects = {
   },
   'enhancing-collaboration': {
     title: 'Enhancing Collaboration',
-    heroTitle: 'Enhancing Collaboration',
+    heroTitle: 'ENHANCING COLLABORATION THROUGH HUMAN-CENTERED DESIGN',
     heroImage: '/portfolio/enhancing-collaboration.jpg',
+    heroStyle: 'split',
     heroBg: '#1a73e8',
     impact: [],
+    moodImage: '/portfolio/google-collage.jpg',
+    moodImageFit: 'contain',
+    richImpact: [
+      {
+        label: 'THE PROBLEM',
+        body: 'Large-scale technology organizations often struggle with silos, misaligned incentives, and fragmented workflows that impede effective collaboration. As teams scale rapidly, the tools and processes that once enabled connection can become barriers to innovation, slowing the organization\'s ability to deliver high-quality user experiences at speed.',
+      },
+      {
+        label: 'OUR HYPOTHESIS',
+        body: 'By applying human-centered design principles to internal collaboration challenges, we could unlock new ways of working that would improve team cohesion, reduce friction, and accelerate the organization\'s ability to ship meaningful products. Better collaboration between design, engineering, and product would directly translate to better outcomes for users.',
+      },
+      {
+        label: 'MY CONTRIBUTIONS',
+        body: 'As a User Experience Leader at Google, I led efforts to reimagine how teams collaborate across functions and geographies. I applied design thinking and experience strategy to both internal workflows and team culture to create the conditions for more effective and meaningful collaboration.',
+        bullets: [
+          'Led cross-functional research to identify collaboration pain points and friction across design, engineering, and product teams',
+          'Facilitated design workshops and co-creation sessions to surface insights and align teams around shared goals and ways of working',
+          'Developed frameworks and playbooks to enable more effective collaboration across distributed and cross-functional teams',
+          'Partnered with senior leadership to embed collaboration best practices into team rituals, planning cycles, and review processes',
+          'Championed human-centered design approaches to internal organizational challenges, demonstrating the value of UX thinking beyond customer-facing products',
+          'Mentored and grew a team of UX practitioners, building capability and fostering a culture of curiosity, empathy, and craft',
+        ],
+      },
+      {
+        label: 'THE RESULT',
+        body: 'Strengthened cross-functional collaboration across design, product, and engineering teams, creating more cohesive ways of working and a shared design culture. Improved team alignment and reduced friction in the product development process, enabling teams to deliver higher quality user experiences with greater speed and confidence.',
+      },
+    ],
     galleryImages: [],
     featuredImage: null,
     nextSlug: null,
