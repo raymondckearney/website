@@ -5,13 +5,13 @@ const projects = [
   { slug: 'new-app-design',                    title: 'New App Design' },
   { slug: 'creating-a-design-system',          title: 'Creating a Design System' },
   { slug: 'shaping-organizational-culture',    title: 'Shaping Organizational Culture' },
+  { slug: 'enhancing-collaboration',           title: 'Enhancing Collaboration' },
   { slug: 'global-wealth-management-firm',     title: 'Global Wealth Management Firm' },
   { slug: 'large-utility-provider',            title: 'Large Utility Provider' },
   { slug: 'national-financial-services',       title: 'National Financial Services Organization' },
   { slug: 'global-food-retailer',              title: 'Global Food Retailer' },
   { slug: 'global-snack-beverage-distributer', title: 'Global Snack and Beverage Distributer' },
   { slug: 'experience-strategy-podcast',       title: 'Experience Strategy and Design Podcast' },
-  { slug: 'enhancing-collaboration',           title: 'Enhancing Collaboration' },
 ];
 
 export default function Portfolio() {
