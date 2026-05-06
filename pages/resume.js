@@ -91,7 +91,7 @@ export default function Resume() {
             Executive leader at the intersection of digital product, experience strategy, and organizational transformation.
           </p>
           <a
-            href="/resume.pdf"
+            href="/Ray_Kearney_Resume_May_2026.pdf"
             download
             className="inline-flex items-center gap-2 bg-brand-500 text-white font-semibold px-6 py-3 rounded-full hover:bg-brand-600 transition-colors"
           >
