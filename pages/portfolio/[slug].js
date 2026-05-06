@@ -464,7 +464,7 @@ export default function ProjectDetail() {
         {(project.impact.length > 0 || project.richImpact) && (
           <section className="flex flex-col lg:flex-row min-h-[400px]">
             {/* Left: mood/collage image */}
-            <div className={`w-full lg:w-[40%] overflow-hidden min-h-[360px] flex items-center justify-center ${project.moodImageFit === 'contain' ? 'bg-white' : 'bg-gray-100'}`}>
+            <div className={`w-full lg:w-[40%] overflow-hidden min-h-[360px] flex items-center justify-center ${project.moodImageFit === 'contain' ? 'bg-white p-6' : 'bg-gray-100'}`}>
               {project.moodImage && (
                 <img
                   src={project.moodImage}
