@@ -464,7 +464,7 @@ export default function ProjectDetail() {
         {(project.impact.length > 0 || project.richImpact) && (
           <section className="flex flex-col lg:flex-row min-h-[400px]">
             {/* Left: mood/collage image */}
-            <div className={`w-full lg:w-1/2 overflow-hidden min-h-[360px] flex items-center justify-center ${project.moodImageFit === 'contain' ? 'bg-white' : 'bg-gray-100'}`}>
+            <div className={`w-full lg:w-[40%] overflow-hidden min-h-[360px] flex items-center justify-center ${project.moodImageFit === 'contain' ? 'bg-white' : 'bg-gray-100'}`}>
               {project.moodImage && (
                 <img
                   src={project.moodImage}
@@ -476,7 +476,7 @@ export default function ProjectDetail() {
             </div>
 
             {/* Right: standard bullets OR rich labeled sections */}
-            <div className="w-full lg:w-1/2 px-8 xl:px-10 py-8 flex flex-col justify-start">
+            <div className="w-full lg:w-[60%] px-8 xl:px-10 py-8 flex flex-col justify-start">
               {project.richImpact ? (
                 project.richImpact.map((section, i) => (
                   <div key={i} className="mb-7">
