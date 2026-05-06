@@ -111,16 +111,14 @@ export default function Home() {
         </section>
 
         {/* ── Speaking photo + Contact ── */}
-        <section className="bg-[#1c3054] pt-10 pb-16 px-6 xl:px-10">
-          <div className="max-w-5xl mx-auto mb-12">
-            <img
-              src="/speaking.jpg"
-              alt="Ray Kearney presenting"
-              className="w-full object-cover"
-              style={{ maxHeight: '480px', objectPosition: 'center' }}
-            />
-          </div>
-          <div className="text-center text-white space-y-2 mb-10">
+        <section className="bg-[#1c3054] pb-16">
+          <img
+            src="/speaking.jpg"
+            alt="Ray Kearney presenting"
+            className="w-full object-cover"
+            style={{ maxHeight: '520px', objectPosition: 'center' }}
+          />
+          <div className="pt-12 px-6 xl:px-10 text-center text-white space-y-2 mb-10">
             <p className="font-bold text-lg">RaymondCKearney@gmail.com</p>
             <p className="font-bold text-lg">(202) 578-3695</p>
             <p className="font-bold text-xl pt-3 pb-6">New York, NY 10024</p>
