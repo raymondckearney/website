@@ -12,7 +12,7 @@ const photoAdventures = [
   {
     image: '/about-mountains.jpg',
     title: 'World Traveler',
-    body: 'Explored over 40 countries across 6 continents, diving into cultures, cuisines, and communities few tourists ever discover.',
+    body: 'Explored over 40 countries across 6 continents, diving into cultures, cuisines, and communities across the globe.',
     imageLeft: true,
   },
   {
@@ -24,14 +24,14 @@ const photoAdventures = [
   {
     image: '/about-skiing.jpg',
     title: 'High-Altitude Adventurer',
-    body: "Hiked and hang glided some of the world's highest peaks, chasing views that remind you how vast—and beautiful—this world is.",
+    body: "Hiked and hang glided some of the world's highest peaks, chasing views that remind you how vast and beautiful the world is.",
     imageLeft: true,
   },
 ];
 
 const moreAdventures = [
   { emoji: '🍽️', title: 'Culinary Curator',  body: 'Maintains a meticulously crafted spreadsheet of over 500 restaurants—because life is too short for a bad meal.' },
-  { emoji: '🗣️', title: 'Language Learner',  body: "Studied 3 foreign languages, believing that speaking someone's language—even imperfectly—is one of the greatest acts of respect." },
+  { emoji: '🗣️', title: 'Linguist',  body: "Studied multiple foreign languages, believing that speaking someone's language, even imperfectly, facilitates connection and understanding." },
 ];
 
 export default function AboutMe() {
@@ -127,20 +127,10 @@ export default function AboutMe() {
           </div>
         </section>
 
-        {/* ── Quote ── */}
-        <section className="bg-brand-500 py-20 text-center text-white">
-          <div className="max-w-3xl mx-auto px-6">
-            <blockquote className="text-2xl sm:text-3xl font-light leading-relaxed italic mb-6">
-              &ldquo;The richest experiences come from showing up fully—whether in the boardroom, on a mountainside, or at the dinner table.&rdquo;
-            </blockquote>
-            <cite className="text-brand-100 text-sm font-semibold tracking-widest uppercase not-italic">— Ray Kearney</cite>
-          </div>
-        </section>
-
         {/* ── CTA ── */}
         <section className="max-w-5xl mx-auto px-6 py-24 text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Let&apos;s create something meaningful</h2>
-          <p className="prose-custom mb-8">Whether it&apos;s transforming an organization or sharing a great meal—I&apos;m always open to a good conversation.</p>
+          <p className="prose-custom mb-8">Whether it&apos;s transforming an organization or sharing a great meal, I&apos;m always open to a good conversation!</p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a href="mailto:hello@raymondckearney.com" className="bg-brand-500 text-white font-medium px-6 py-3 rounded-full hover:bg-brand-600 transition-colors">
               Get in Touch

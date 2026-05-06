@@ -4,8 +4,8 @@ import Link from 'next/link';
 const experience = [
   {
     title: 'Head of Digital Product',
-    company: 'Fresco',
-    period: 'May 2025 – Present',
+    company: 'Taco Bell',
+    period: 'May 2025 – Mar 2026',
     current: true,
   },
   {
@@ -87,9 +87,21 @@ export default function Resume() {
           <h1 className="text-5xl sm:text-6xl font-bold text-gray-900 leading-tight mb-6">
             Ray Kearney
           </h1>
-          <p className="text-lg text-gray-600 leading-relaxed max-w-xl">
+          <p className="text-lg text-gray-600 leading-relaxed max-w-xl mb-8">
             Executive leader at the intersection of digital product, experience strategy, and organizational transformation.
           </p>
+          <a
+            href="/resume.pdf"
+            download
+            className="inline-flex items-center gap-2 bg-brand-500 text-white font-semibold px-6 py-3 rounded-full hover:bg-brand-600 transition-colors"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            Download Resume
+          </a>
         </section>
 
         {/* ── Experience + Skills sidebar ── */}

@@ -19,7 +19,7 @@ export default function Contact() {
             <span className="text-brand-500">meaningful</span>
           </h1>
           <p className="text-lg text-gray-600 leading-relaxed max-w-xl">
-            Whether it&apos;s a new project, a career conversation, or just a great idea worth exploring—
+            Whether it&apos;s a new project, a career conversation, or just a great idea worth exploring,
             I&apos;m always open to connecting.
           </p>
         </section>
