@@ -23,24 +23,44 @@ export default function Portfolio() {
         <link rel="canonical" href="https://www.raymondckearney.com/portfolio" />
       </Head>
 
-      <main className="px-6 xl:px-10 py-10">
-        <p className="text-sm text-gray-700 mb-8">Click on an image for more detail</p>
+      <main className="pt-24">
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.map(({ slug, title }) => (
-            <Link key={slug} href={`/portfolio/${slug}`} className="group block">
-              <div className="overflow-hidden bg-gray-200 aspect-[4/3] w-full">
-                <img
-                  src={`/portfolio/${slug}.jpg`}
-                  alt={title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  onError={(e) => { e.target.style.display = 'none'; }}
-                />
-              </div>
-              <h2 className="mt-3 text-base font-bold text-black">{title}</h2>
-            </Link>
-          ))}
-        </div>
+        {/* ── Hero ── */}
+        <section className="max-w-5xl mx-auto px-6 py-16">
+          <p className="section-label">Portfolio</p>
+          <h1 className="text-5xl sm:text-6xl font-bold text-gray-900 leading-tight mb-6">
+            Work that moves people<br />
+            <span className="text-brand-500">and organizations forward</span>
+          </h1>
+          <p className="text-lg text-gray-600 leading-relaxed max-w-2xl">
+            A selection of projects spanning digital product design, experience strategy,
+            organizational transformation, and culture — across industries and continents.
+          </p>
+        </section>
+
+        {/* ── Grid ── */}
+        <section className="px-6 xl:px-10 pb-20">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {projects.map(({ slug, title }) => (
+              <Link key={slug} href={`/portfolio/${slug}`} className="group block">
+                <div className="relative overflow-hidden bg-gray-200 aspect-[4/3] w-full">
+                  <img
+                    src={`/portfolio/${slug}.jpg`}
+                    alt={title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    onError={(e) => { e.target.style.display = 'none'; }}
+                  />
+                  {/* Hover overlay */}
+                  <div className="absolute inset-0 bg-[#1c3054]/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-5">
+                    <h2 className="text-white font-bold text-base leading-snug">{title}</h2>
+                  </div>
+                </div>
+                <h2 className="mt-3 text-base font-bold text-black group-hover:text-brand-500 transition-colors">{title}</h2>
+              </Link>
+            ))}
+          </div>
+        </section>
+
       </main>
     </>
   );

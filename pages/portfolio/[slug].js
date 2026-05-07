@@ -103,7 +103,7 @@ const projects = {
   },
   'global-wealth-management-firm': {
     title: 'Global Wealth Management Firm',
-    heroTitle: 'REIMAGINING THE CLIENT & EMPLOYEE EXPERIENCE',
+    heroTitle: 'Reimagining the Client & Employee Experience',
     heroImage: '/portfolio/global-wealth-management-firm.jpg',
     heroStyle: 'split',
     heroBg: '#0d2d1e',
@@ -147,7 +147,7 @@ const projects = {
   },
   'large-utility-provider': {
     title: 'Large Utility Provider',
-    heroTitle: 'TRANSFORMING A COMPANY THROUGH DIGITAL EXPERIENCE',
+    heroTitle: 'Transforming a Company Through Digital Experience',
     heroImage: '/portfolio/large-utility-provider.jpg',
     heroStyle: 'split',
     heroBg: '#0a2540',
@@ -191,7 +191,7 @@ const projects = {
   },
   'national-financial-services': {
     title: 'National Financial Services Organization',
-    heroTitle: 'DESIGNING A CUSTOMER-CENTRIC ORGANIZATION TO DELIVER A PERSONALIZED CLIENT EXPERIENCE',
+    heroTitle: 'Designing a Customer-Centric Organization to Deliver a Personalized Client Experience',
     heroImage: '/portfolio/national-financial-services.jpg',
     heroStyle: 'split',
     heroBg: '#0a2540',
@@ -235,7 +235,7 @@ const projects = {
   },
   'global-food-retailer': {
     title: 'Global Food Retailer',
-    heroTitle: 'INCREASING BRAND LOYALTY AND ENHANCING THE CUSTOMER EXPERIENCE',
+    heroTitle: 'Increasing Brand Loyalty and Enhancing the Customer Experience',
     heroImage: '/portfolio/global-food-retailer.jpg',
     heroStyle: 'split',
     heroBg: '#7b1200',
@@ -276,7 +276,7 @@ const projects = {
   },
   'global-snack-beverage-distributer': {
     title: 'Global Snack and Beverage Distributer',
-    heroTitle: 'REDEFINING THE FUTURE OF GTM AND SALES EXECUTION',
+    heroTitle: 'Redefining the Future of GTM and Sales Execution',
     heroImage: '/portfolio/global-snack-beverage-distributer.jpg',
     heroStyle: 'split',
     heroBg: '#1a1a1a',
@@ -319,7 +319,7 @@ const projects = {
   },
   'experience-strategy-podcast': {
     title: 'Experience Strategy and Design Podcast',
-    heroTitle: 'BRINGING THE WORLD OF EXPERIENCE DESIGN TO LIFE THROUGH AUDIO',
+    heroTitle: 'Bringing the World of Experience Design to Life Through Audio',
     heroImage: '/portfolio/experience-strategy-podcast.jpg',
     heroStyle: 'split',
     heroBg: '#c0192b',
@@ -360,7 +360,7 @@ const projects = {
   },
   'enhancing-collaboration': {
     title: 'Enhancing Collaboration',
-    heroTitle: 'ENHANCING COLLABORATION THROUGH HUMAN-CENTERED DESIGN',
+    heroTitle: 'Enhancing Collaboration Through Human-Centered Design',
     heroImage: '/portfolio/enhancing-collaboration.jpg',
     heroStyle: 'split',
     heroBg: '#1a73e8',

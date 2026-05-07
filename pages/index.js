@@ -1,37 +1,35 @@
 import Head from 'next/head';
 import Link from 'next/link';
 
-const bullets = [
-  '18+ years of professional work experience working across several industries',
-  '12+ years leading and motivating teams to achieve results and mentoring individuals',
-  'Experience in financial services, tech, food & beverage, utilities, entertainment & media, telecom, and healthcare',
-  'Global experience working across cultures and conducting business in various countries',
+const stats = [
+  { value: '18+', label: 'Years of experience' },
+  { value: '12+', label: 'Years leading teams' },
+  { value: '7+',  label: 'Industries served' },
+  { value: '40+', label: 'Countries explored' },
 ];
 
 const testimonials = [
   {
     quote: "The client loved Ray and loved our results. We are in the process of signing $1.5M follow-on work, which is a direct result of Ray's hard work. Ray leveraged his previous strategic and organizational expertise to craft something new, tangible, valuable and useful for the C-suite.",
-    navy: true,
+    featured: true,
   },
   {
     quote: "Ray's leadership...continued to be exceptional. He continued to leverage and extend key relationships with the CCO, CIO, and VP of Marketing to showcase our BXT philosophy and deliver great product.",
-    navy: false,
   },
   {
     quote: "Ray has a gift with people, and he created an exceptional environment for both for the client, introducing new ways of working, and with the internal PwC team, creating a high-integrity work environment coupled with fun, foodie adventures.",
-    navy: true,
   },
   {
     quote: "Ray developed great relationships with all members of the client team and specifically the Chief Customer Officer and CIO. Ray's ability to leverage his technical acumen to extend the clients perspective allowed us to quickly elevate their ideas on brand and experience.",
-    navy: false,
   },
   {
     quote: "Ray got the team and client to collaborate, which with the client culture was no small feat. The client looked to him for direction on expanding their future state client journey's and to provide the training for them to expand their team.",
-    navy: true,
   },
 ];
 
 export default function Home() {
+  const [featured, ...rest] = testimonials;
+
   return (
     <>
       <Head>
@@ -57,29 +55,26 @@ export default function Home() {
             <h1 className="text-5xl xl:text-6xl font-black text-black leading-tight mb-3">
               Ray Kearney, MBA
             </h1>
-            <p className="text-xs font-bold tracking-widest uppercase text-center text-black mb-6">
+            <p className="text-xs font-bold tracking-widest uppercase text-center text-gray-500 mb-6">
               Innovative &amp; Strategic Executive Leader
             </p>
-            <p className="text-center text-gray-800 text-sm leading-relaxed mb-6">
-              I am PASSIONATE about experience! Whether crafting experiences for consumers or creating
-              an inspiring work environment I am focused on the person behind the experience. Since
-              beginning my professional journey in Product and Experience Strategy, I&apos;ve led
-              transformation and change across numerous organizations. Through all my experience I remain
-              focused on bringing innovative thinking and strategic vision to all I do. I&apos;m grateful
-              to wake up each day loving what I do and I&apos;m excited to share with you some of my
-              greatest work. Please take a look and contact me with any questions.
+            <p className="text-gray-700 text-sm leading-relaxed mb-8">
+              I&apos;m an executive leader at the intersection of people, strategy, and experience.
+              My career spans 18+ years building transformative digital products, leading
+              high-performing teams, and helping organizations design the experiences their
+              customers and employees deserve. Take a look at my work — I&apos;d love to connect.
             </p>
-            <hr className="border-gray-300 mb-6" />
-            <div className="bg-gray-500 p-6 mb-6">
-              <ul className="space-y-4">
-                {bullets.map((b, i) => (
-                  <li key={i} className="flex gap-2 text-white font-bold text-sm leading-snug">
-                    <span className="mt-0.5">•</span>
-                    <span>{b}</span>
-                  </li>
-                ))}
-              </ul>
+
+            {/* ── Stat callouts ── */}
+            <div className="grid grid-cols-2 gap-3 mb-8">
+              {stats.map(({ value, label }) => (
+                <div key={label} className="border border-gray-200 rounded-xl p-4">
+                  <p className="text-2xl font-black text-[#1c3054] leading-none mb-1">{value}</p>
+                  <p className="text-xs text-gray-500 leading-snug">{label}</p>
+                </div>
+              ))}
             </div>
+
             <div className="flex justify-end">
               <Link
                 href="/portfolio"
@@ -92,17 +87,25 @@ export default function Home() {
         </section>
 
         {/* ── Testimonials ── */}
-        <section className="px-6 xl:px-10 py-16">
-          <h2 className="text-3xl xl:text-4xl font-black uppercase mb-10">
-            What My Colleagues Say About Me...
+        <section className="px-6 xl:px-10 py-20">
+          <h2 className="text-3xl xl:text-4xl font-black uppercase mb-12">
+            What My Colleagues Say
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
-            {testimonials.map((t, i) => (
+
+          {/* Featured quote */}
+          <div className="bg-[#1c3054] rounded-2xl px-10 py-12 mb-6 relative overflow-hidden">
+            <span className="absolute top-4 left-8 text-8xl text-white/10 font-serif leading-none select-none">&ldquo;</span>
+            <p className="relative text-white text-xl sm:text-2xl font-light leading-relaxed italic max-w-3xl">
+              &ldquo;{featured.quote}&rdquo;
+            </p>
+          </div>
+
+          {/* Supporting quotes */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {rest.map((t, i) => (
               <div
                 key={i}
-                className={`rounded-2xl p-5 text-white text-xs text-center leading-relaxed italic ${
-                  t.navy ? 'bg-[#1c3054]' : 'bg-[#555565]'
-                }`}
+                className="rounded-2xl p-6 text-gray-700 text-sm leading-relaxed italic border border-gray-100 bg-gray-50"
               >
                 &ldquo;{t.quote}&rdquo;
               </div>
