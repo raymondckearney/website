@@ -44,7 +44,7 @@ export default function Home() {
         <section className="flex flex-col md:flex-row">
           <div className="w-full md:w-[48%] bg-gray-200" style={{ minHeight: '620px' }}>
             <img
-              src="/headshot.jpg"
+              src="/Ray Headshot Professional.png"
               alt="Ray Kearney"
               className="w-full h-full object-cover object-top"
               style={{ minHeight: '620px', display: 'block' }}
