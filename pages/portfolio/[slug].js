@@ -378,7 +378,7 @@ const projects = {
       },
       {
         label: 'MY CONTRIBUTIONS',
-        body: 'As a User Experience Leader at Google, I led global programs and drove initiatives to build a stronger culture of collaboration, design thinking, and innovation across engineering, product, and design disciplines.',
+        body: 'As a Product & Experience Leader at Google, I led global programs and drove initiatives to build a stronger culture of collaboration, design thinking, and innovation across engineering, product, and design disciplines.',
         bullets: [
           'Facilitated cross-functional collaboration by bringing together engineering, product management, and design leaders for ideation and innovation workshops, strengthening organizational agility',
           'Oversaw global programs (100+ staff) serving brand clients, optimizing hiring, training, collaboration and agile ways of working',
