@@ -3,13 +3,13 @@ import Link from 'next/link';
 
 const experience = [
   {
-    title: 'Head of Digital Product',
+    title: 'Head of Digital Product & Innovation',
     company: 'Taco Bell',
     period: 'May 2025 – Mar 2026',
     current: true,
   },
   {
-    title: 'Head of Digital Product Design & Research',
+    title: 'Head of Digital Experience & Research',
     company: 'Taco Bell',
     period: 'Jun 2024 – May 2025',
   },
@@ -19,55 +19,55 @@ const experience = [
     period: 'May 2023 – Jun 2024',
   },
   {
-    title: 'User Experience Leader',
+    title: 'Product & Experience Leader',
     company: 'Google',
-    period: 'Mar 2021 – May 2023',
+    period: 'Mar 2021 – Apr 2023',
   },
   {
-    title: 'Senior Manager, Experience Strategy & Design',
+    title: 'Experience Strategy & Innovation Leader',
     company: 'PwC',
-    period: '2018 – Feb 2021',
+    period: 'Jun 2017 – Feb 2021',
   },
   {
     title: 'Vice President, Customer Experience',
     company: 'PHEAA',
-    period: 'Jan 2017 – 2018',
+    period: 'Jan 2017 – Jun 2017',
+  },
+  {
+    title: 'Engagement Manager',
+    company: 'PwC',
+    period: 'Jan 2014 – Jun 2017',
   },
   {
     title: 'Marketing Manager',
     company: 'Verizon',
-    period: 'Jun 2015 – Jan 2017',
+    period: 'Jun 2015 – May 2016',
   },
   {
-    title: 'Manager, Experience Strategy',
-    company: 'PwC',
-    period: 'Jan 2014 – Jun 2015',
-  },
-  {
-    title: 'Senior Associate',
+    title: 'Senior Management Consultant',
     company: 'PwC',
     period: 'Jan 2011 – Jan 2014',
   },
 ];
 
 const education = [
-  { degree: 'Master of Business Administration', school: 'Brigham Young University (BYU)' },
-  { degree: 'Bachelor of Arts', school: 'Brigham Young University (BYU)' },
+  { degree: 'Master of Business Administration (MBA)', school: 'Brigham Young University (BYU)', year: 'Apr 2011' },
+  { degree: 'Bachelor of Arts, Linguistics (BA)', school: 'Brigham Young University (BYU)', year: 'Apr 2007' },
 ];
 
 const skills = [
-  'Experience Strategy',
-  'Digital Product Strategy',
-  'Executive Leadership',
-  'Design Leadership',
-  'Product Leadership',
-  'Experience Design',
-  'Digital Design',
-  'XFN Leadership',
   'Innovation',
-  'Collaboration',
-  'Mentorship',
-  'Consulting',
+  'Facilitation & Design Sprints',
+  'Agile Product Management',
+  'Multidisciplinary Leadership',
+  'Executive Communication',
+  'Innovation Frameworks',
+  'Vision Setting',
+  'Strategic Influence',
+  'Design Thinking / Experience Design',
+  'Digital Product Strategy',
+  'Organizational & Analytical Skills',
+  'Consulting & Client Engagement',
 ];
 
 export default function Resume() {
@@ -138,8 +138,9 @@ export default function Resume() {
               <div>
                 <h2 className="text-xs font-bold tracking-widest uppercase text-brand-500 mb-6">Education</h2>
                 <div className="space-y-6">
-                  {education.map(({ degree, school }) => (
+                  {education.map(({ degree, school, year }) => (
                     <div key={degree} className="border-l-2 border-gray-200 pl-4">
+                      <p className="text-xs text-gray-400 mb-1 font-medium">{year}</p>
                       <p className="font-bold text-gray-900 text-sm leading-snug">{degree}</p>
                       <p className="text-gray-500 text-sm mt-1">{school}</p>
                     </div>
